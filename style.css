@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/font/Poppins-Regular.otf");
+}
+
+.my-1 {
+  margin: 5px;
+}
+body {
+  font-family: "Poppins";
+}
+.container {
+  width: 560px;
+  margin: 50px auto;
+  padding: 20px;
+}
+.text-center {
+  text-align: center;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+input[type="number"] {
+  font-size: 18px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.btn-form {
+  margin: 20px;
+  text-align: center;
+}
+button {
+  background-color: #6558f5;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}

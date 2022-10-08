@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Check Your BMI</h1>
+      <p class="text-center">
+        Enter your weight and height to check your BMI result
+      </p>
+      <form id="calculate">
+        <div class="form-group">
+          <label for="" class="my-1">Put your weight (kg)</label>
+          <input id="weight" type="number" class="form-input" required />
+        </div>
+        <div class="form-group">
+          <label for="" class="my-1">Put your height (cm)</label>
+          <input id="height" type="number" class="form-input" required />
+        </div>
+        <div class="btn-form">
+          <button type="submit">Calculate</button>
+        </div>
+      </form>
+      <p id="notif" class="text-center"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
