@@ -4,6 +4,23 @@ let weightInput = document.getElementById("weight");
 let heightInput = document.getElementById("height");
 let notif = document.getElementById("notif");
 
+weightInput.addEventListener("input", function () {
+  if (this.value == 0) {
+    this.value = "";
+  }
+  if (this.value < 0) {
+    this.value = "";
+  }
+});
+heightInput.addEventListener("input", function () {
+  if (this.value == 0) {
+    this.value = "";
+  }
+  if (this.value < 0) {
+    this.value = "";
+  }
+});
+
 weightInput.focus(); // membuat focus input saat pertama kali website direload
 
 // membuat event
@@ -14,7 +31,7 @@ calculateForm.addEventListener("submit", (event) => {
     height: heightInput.value,
   };
 
-  let result = bmi.weight / ((bmi.height / 100) * (bmi.height / 100));
+  let result = bmi.weight / (bmi.height / 100) ** 2;
 
   console.log(result);
 
@@ -39,7 +56,5 @@ calculateForm.addEventListener("submit", (event) => {
   weightInput.focus();
 
   // menyisipkan text ke dalam element HTML
-  notif.innerHTML = `Your BMI is <b>${result.toFixed(
-    1
-  )}</b> whic mean You are <b>${category}</b>`;
+  notif.innerHTML = `Your BMI is <b>${result.toFixed(1)}</b> whic mean You are <b>${category}</b>`;
 });
